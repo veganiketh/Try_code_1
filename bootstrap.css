@@ -1,0 +1,69 @@
+.btn-instagram {
+  font-size: 1.2em;
+  font-family: sans-serif;
+  color:#fff;
+	text-shadow:1px 1px #333;
+	text-decoration: none;
+	display:inline-block; 
+	padding:0.5em 1.75em 0.5em 1em;
+	border-radius: 0.25em;
+	background: #3F729B;
+	border-right:0.25em solid #00558D; /* blue stripe */
+	position: relative;
+	margin:0 0 1px; 
+}
+
+.btn-instagram:before, .btn-instagram:after {
+	content:'';
+	display:block;
+	position: absolute;
+}
+
+/* Add Stripes */
+.btn-instagram:before {
+	width:0.25em;
+	height: 100%;
+	background:#FBB03B; /* yellow stripe */ 
+	border-left:0.25em solid #D4145A; /* red stripe */ 
+	border-right:0.25em solid #00A99D; /* green stripe */ 
+	top:0;
+	right:0;
+}
+
+
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.2) 49%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.35)), color-stop(49%,rgba(255,255,255,0.2)), color-stop(50%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,0.1)));
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.2) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.1) 100%);
+background: -o-linear-gradient(top,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.2) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.1) 100%);
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.2) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.1) 100%);
+background: linear-gradient(to bottom,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.2) 49%,rgba(255,255,255,0) 50%,rgba(0,0,0,0.1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59ffffff', endColorstr='#1a000000',GradientType=0 );
+
+}
+
+
+/* Animate - Fade */
+.btn-instagram, .btn-instagram:before {
+    -webkit-transition-property: background, border;
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition-property: background, border;
+    -moz-transition: 0.1s ease-in;
+    -o-transition-property: background, border;
+    -o-transition: 0.1s ease-in;
+    transition-property: background, border;
+    transition: 0.1s ease-in;
+
+}
+
+/* Hover / Focus */
+.btn-instagram:hover, .btn-instagram:focus  {
+	background: #2d638e;
+}
+
+
+
+/* Active */
+.btn-instagram:active {
+	margin:1px 0 0; 
+}
